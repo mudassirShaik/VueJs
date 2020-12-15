@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Looping </title>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="app" >
+            <p v-for="student in student" v-bind:class="{status:status}">
+                {{ student }}
+            </p>
+            <p v-for="Player in players">
+                {{ Player.name }} : {{Player.score}}
+            </p>
+        </div>
+        <script type = "text/javascript" src="index.js"></script>
+    </body>
+</html>
